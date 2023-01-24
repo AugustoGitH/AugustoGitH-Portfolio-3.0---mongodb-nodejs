@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfolio</title>
+    <%- include("./templates/configs-defaults.ejs") %>
+    <link rel="stylesheet" href="/public/css/home_page-port.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>AUGUSTO WESTPHAL</h1>
+            <nav>
+                <% if(admin){  %> 
+                    <a target="_blank" href="/admin/auth/auth/painel"><i class='bx bxs-book-content' ></i></i></a>
+                <% } %> 
+                <a target="_blank" href="https://github.com/AugustoGitH"><i class='bx bxl-github'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/augusto-westphal-67b7b3230/"><i class='bx bxl-linkedin-square' ></i></a>
+            </nav>
+        </div>
+    </header>
+    <div class="portfolio-container">
+        <div class="portfolio-content">
+            <div class="personal-info-container">
+                <div class="personal-info-container-img">
+                    <img src="/public/assets/images/profile-01.png">
+                </div>
+                <article class="personal-section-article">
+                    <h3>Sobre</h3>
+                    <h1>Augusto C. Westphal</h1>
+                    <p>Meu nome é Augusto Caetano Westphal, tenho 19 anos e sou um jovem desenvolvedor full-stack e web designer. Com um ano e meio de experiência no campo, sou apaixonado por tecnologia desde cedo e busco constantemente me atualizar e aprender sobre as últimas tendências e ferramentas. Atualmente trabalho como freelancer, mas tenho o objetivo de me estabelecer como desenvolvedor junior em uma empresa, onde possa crescer profissionalmente e contribuir para projetos incríveis.</p>
+                    <nav>
+                        <a href="https://www.instagram.com/augusto_westphall/">Instagram<i class='bx bxl-instagram' ></i></a>
+                        <a href="#">Facebook<i class='bx bxl-facebook' ></i></a>
+
+                    </nav>
+                </article>
+                <h2 class="text-outside-h2">São mais de 20 projetos publicados no Github<i class='bx bxl-github' ></i></h2>
+                <article class="personal-section-article">
+                    <h2>Porcentagem das tecnologias usadas em meus projetos<i class='bx bxs-data'></i></h2>
+                    <ul class="tech-list" percent-techs>
+                        <li id="html" percent-tech>
+                            <h4>HTML5</h4>
+                            <div class="circle-percent-tech">
+                                <span class="percent-display">0%</span>
+                                <div class="quantity-percent-ilustration"></div>
+                            </div>
+                        </li>
+                        <li id="css" percent-tech>
+                            <h4>CSS3</h4>
+                            <div class="circle-percent-tech">
+                                <span class="percent-display">0%</span>
+                                <div class="quantity-percent-ilustration"></div>
+                            </div>
+                        </li>
+                        <li id="javascript" percent-tech>
+                            <h4>JavaScript</h4>
+                            <div class="circle-percent-tech">
+                                <span class="percent-display">0%</span>
+                                <div class="quantity-percent-ilustration"></div>
+                            </div>
+                        </li>
+                        <li id="sass" percent-tech>
+                            <h4>SASS</h4>
+                            <div class="circle-percent-tech">
+                                <span class="percent-display">0%</span>
+                                <div class="quantity-percent-ilustration"></div>
+                            </div>
+                        </li>
+                        <li id="scss" percent-tech>
+                            <h4>SCSS</h4>
+                            <div class="circle-percent-tech">
+                                <span class="percent-display">0%</span>
+                                <div class="quantity-percent-ilustration"></div>
+                            </div>
+                        </li>
+                        <li id="ejs" percent-tech>
+                            <h4>EJS</h4>
+                            <div class="circle-percent-tech">
+                                <span class="percent-display">0%</span>
+                                <div class="quantity-percent-ilustration"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+                <article class="personal-section-article" id="contact">
+                    <h1>Contate-me<i class='bx bxs-chat' ></i></h1>
+                    <p>"Caro futuro cliente, estou disponível para atender a suas necessidades com o desenvolvimento web. Por favor, entre em contato comigo para discutir como posso ajudar sua empresa a alcançar seus objetivos digitais. Estou ansioso para trabalhar com você."</p>
+                    <ul class="social-list">
+                        <li><a target="_blank" href="mailto:augustoc.westphal@gmail.com">Email<i class='bx bxs-envelope' ></i></a></li>
+                        <li><a target="_blank" href="https://wa.me/5527997435139">Whatsapp<i class='bx bxl-whatsapp' ></i></a></li>
+                        <li><a target="_blank"href="https://www.linkedin.com/in/augusto-westphal-67b7b3230/">Linkedin<i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
+                </article>
+                <p id="text-copyrigth-p">© Augusto Caetano Westphal, 2023. All Rights Reserved</p>
+            </div>
+
+            <div class="technical-info-container">
+                <div class="technical-info-presentation-container">
+                    <article>
+                        <h3>DEVLOPER FULL-STACK<i class='bx bxs-hot' ></i></h3>
+                        <h1><sup>Meu nome é</sup><span>Augusto<span id="sobrenome-ocult"> C. Westphal</span></h1>
+                        <div class="skills-content">
+                            <p>Também sou</p>
+                            <ul>
+                                <li>Web <br>Designer</li>
+                                <li>Designer <br>Gráfico</li>
+                            </ul>
+                        </div>
+                        <a href="#contact"><i class='bx bxs-mouse-alt'></i>Entre em contato</a>
+                    </article>
+                    <div class="technical-info-img-container">
+                        <div class="technical-info-img-content">
+                            <img src="/public/assets/images/profile-02.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="technical-info-techs-container">
+                    <h1>technologies in projects</h1>
+                    <ul>
+                        <li>
+                            <i class='bx bxl-html5'></i>
+                            <h2>HTML5</h2>
+                        </li>
+                        <li>
+                            <i class='bx bxl-css3' ></i>
+                            <h2>CSS3</h2>
+                        </li>
+                        <li>
+                            <i class='bx bxl-javascript' ></i>
+                            <h2>Javascript</h2>
+                        </li>
+                        <li>
+                            <i class='bx bxl-firebase' ></i>
+                            <h2>Firebase</h2>
+                        </li>
+                        <li>
+                            <i class='bx bxl-bootstrap' ></i>
+                            <h2>Bootstrap</h2>
+                        </li>
+                        <li>
+                            <i class='bx bxl-nodejs' ></i>
+                            <h2>NodeJS</h2>
+                        </li>
+                        <li>
+                            <i class='bx bxl-mongodb' ></i>
+                            <h2>MongoDB</h2>
+                        </li>
+                        <li>
+                            <i class='bx bxl-react' ></i>
+                            <h2>ReactJS</h2>
+                        </li>
+                    </ul>
+                </div>
+                <div class="technical-info-projects-container">
+                    <h1>Portfolio Projects</h1>
+                    <nav controller-filter>
+                        <li id="all" class="mark-button-filter" button-filter>All</li>
+                        <li id="lading-page" button-filter>Lading pages</li>
+                        <li id="web-app" button-filter>Web apps</li>
+                        <li id="e-commerce" button-filter>E-commerces</li>
+                    </nav>
+                    <ul class="projects-list">
+                        
+                        
+                
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/home_page-port.js"></script>
+</body>
+</html>

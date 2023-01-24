@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+    <%- include("./templates/configs-defaults.ejs") %>
+    <link rel="stylesheet" href="/public/css/painel-port.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Painel de Controle</h1>
+            <a href="/"><i class='bx bxs-right-arrow-circle' ></i></a>
+        </div>
+    </header>
+    <section class="painel-data-portfolio">
+        <div class="painel-data-portfolio-content">
+            <article>
+                <h3>Dados coletados a respeito do seu portfolio</h3>
+                <ul>
+                    <li>Dado Exemple 01</li>
+                    <li>Dado Exemple 01</li>
+                    <li>Dado Exemple 01</li>
+                    <li>Dado Exemple 01</li>
+                </ul>
+            </article>
+            <img src="/public/assets/images/profile-01.png">
+        </div>
+    </section>
+    <section class="painel-projects-create">
+        <div class="painel-projects-create-content">
+            <h1>Publique seu projeto</h1>
+            <div class="input-create-project">
+                <label>Nome do projeto</label>
+                <input type="text" id="name-project">
+            </div>
+            <div class="input-create-project">
+                <label>Link do projeto</label>
+                <input type="text" id="url-project">
+            </div>
+            <div class="input-create-project">
+                <label>Id do projeto no Github</label>
+                <input type="number" id="idGit-project">
+            </div>
+            <div class="input-image-project">
+                <label class="input-image-label">
+                    <input class="input-image" type="file" accept="image/*" required>
+                    Escolha uma imagem<i class='bx bxs-image-add' ></i>
+                </label>
+                <div class="container-sample-image"></div>
+            </div>
+            <div class="checkboxes-container" >
+                <h2>Tipo de projeto</h2>
+                <ul id="checkboxes-type" checkboxes-selected>
+                    <li class="mark-check check-type" id="all" checkbox>All</li>
+                    <li id="lading-page" checkbox>Lading Page</li>
+                    <li id="web-app" checkbox>Web App</li>
+                    <li id="e-commerce" checkbox>E-Commerce</li>
+                </ul>
+            </div>
+            <div class="checkboxes-container">
+                <h2>Tecnologias mais usadas</h2>
+                <ul id="checkboxes-techs" checkboxes-selected selected-all>
+                    <li class="mark-check check-tech" id="html" checkbox><i class='bx bxl-html5'></i></li>
+                    <li id="css" checkbox><i class='bx bxl-css3' ></i></li>
+                    <li id="javascript" checkbox><i class='bx bxl-javascript' ></i></li>
+                    <li id="firebase" checkbox><i class='bx bxl-firebase' ></i></li>
+                    <li id="nodejs" checkbox><i class='bx bxl-nodejs' ></i></li>
+                    <li id="bootstrap" checkbox><i class='bx bxl-bootstrap' ></i></li>
+                    <li id="mongodb" checkbox><i class='bx bxl-mongodb' ></i></li>
+                    <li id="sass/scss" checkbox><i class='bx bxl-sass' ></i></li>
+                    <li id="typescript" checkbox><i class='bx bxl-typescript'></i></li>
+                    <li id="reactjs" checkbox><i class='bx bxl-react' ></i></li>
+                </ul>
+            </div>
+            <button id="button-submit-project">Criar projeto</button>
+        </div>
+    </section>
+    <section class="projects-section">
+        <div class="projects-content">
+            <h2>Projetos presentes em seu portfolio</h2>
+            <ul class="projects-list">
+            </ul>
+        </div>
+    </section>
+    <script src="/public/js/painel-port.js"></script>
+</body>
+</html>

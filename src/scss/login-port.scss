@@ -1,0 +1,74 @@
+$color-background-solid: #201c1c;
+$color-background-light: rgb(43, 37, 37);
+
+$color-yellow: #e9b95b;
+$color-white: #e8ecec;
+$color-black: #000000;
+$color-black-light: #000000a5;
+
+$width-limit-content: 1100px;
+
+
+body{
+    background-color: $color-background-solid;
+    font-family: Poppis, Arial, Helvetica, sans-serif;
+    color: $color-white;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: $color-background-solid;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card-section{
+        background-color: $color-white;
+        padding: 2rem;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 1px 1px 20px #00000056;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-direction: column;
+        .icon-person{
+            color: $color-black;
+            font-size: 3rem;
+        }
+        button{
+            all: unset;
+            margin-top: 2rem;
+            color: $color-white;
+            background-color: $color-black;
+            padding: .4rem 1.7rem;
+            border-radius: .8rem;
+            cursor: pointer;
+        }
+        .input-card{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            color: $color-black;
+            margin-top: 2rem;
+            label{
+                width: 100%;
+                font-weight: bold;
+            }
+            input{
+                width: 100%;
+                padding: .5rem 1.3rem;
+                font-size: 1.1rem;
+                border: 1.5px solid $color-black;
+                box-shadow: 3px 3px $color-black;
+                border-radius: .8rem;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+}

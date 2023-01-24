@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <%- include("./templates/configs-defaults.ejs") %>
+    <link rel="stylesheet" href="/public/css/login-port.css"> 
+</head>
+<body>
+    <section>
+        <div class="card-section">
+            <!-- <i class='icon-person bx bx-child'></i> -->
+            <div class="input-card">
+                <label>Nome do administrador</label>
+                <input id="name-admin" type="text">
+            </div>
+            <div class="input-card">
+                <label>Senha</label>
+                <input id="password" type="password">
+            </div>
+            <button id="submit-form">Entrar</button>
+        </div>
+    </section>
+    <script src="/public/js/login-port.js"></script>
+</body>
+</html>
